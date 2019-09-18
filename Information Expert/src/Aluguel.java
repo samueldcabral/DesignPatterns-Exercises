@@ -1,4 +1,3 @@
-
 public class Aluguel {
 	private Fita fita;
     private int diasAlugada;
@@ -41,12 +40,12 @@ public class Aluguel {
     }
 
 	public int getBonusFrequente() {
-		   if (this.getFita().getCodigoDePreco() == Tipo.lancamento
-	                && this.getDiasAlugada() > 1) {
-	               return 2;
-	            }
+	   if (this.getFita().getCodigoDePreco() == Tipo.lancamento
+                && this.getDiasAlugada() > 1) {
+               return 2;
+            }
 
-		return 1;
+	return 1;
 	}
 
 }

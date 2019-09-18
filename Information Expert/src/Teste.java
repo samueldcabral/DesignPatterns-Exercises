@@ -1,8 +1,7 @@
-
-public class TesteApp {
+public class Teste {
 
 	public static void main(String[] args) {
-
+	
 		Fita f1 = new  Fita("Jogos Vorazes", Tipo.normal);
 		Fita f2 = new  Fita("Bastardos inglorios", Tipo.infantil);
 		Fita f3 = new  Fita("Babla", Tipo.lancamento);
@@ -15,11 +14,16 @@ public class TesteApp {
 		Cliente c2 = new Cliente("Machada Assis");
 		
 		c1.adicionaAluguel(a1);
-		c1.adicionaAluguel(a2);
+		
 		c2.adicionaAluguel(a3);
 		
-		c1.extrato();
-		c2.extrato();
+		System.out.println(c1.extrato());
+		System.out.println("\n ----------------------------- \n");
+		System.out.println(c2.extrato());
+		
+		c1.adicionaAluguel(a3);
+		System.out.println("\n ----------------------------- \n");
+		System.out.println(c1.extrato());
 	}
 
 }
