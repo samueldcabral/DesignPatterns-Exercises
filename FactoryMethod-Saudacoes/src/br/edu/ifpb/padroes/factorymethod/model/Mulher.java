@@ -1,4 +1,4 @@
-package br.edu.ifpb.padroes.factorymanager.model;
+package br.edu.ifpb.padroes.factorymethod.model;
 
 public class Mulher extends Pessoa{
 	public Mulher(String nome, String genero) {

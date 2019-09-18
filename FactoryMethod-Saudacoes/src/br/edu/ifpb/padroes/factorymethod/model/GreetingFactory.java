@@ -1,14 +1,14 @@
-package br.edu.ifpb.padroes.factorymanager.model;
+package br.edu.ifpb.padroes.factorymethod.model;
 
 public class GreetingFactory {
 
 	public GreetingFactory() {}
 	
 	public Pessoa getGreet(String nome, String genero){
-		if (genero.equals("homem"))
+		if (genero.equals("masculino"))
 			return new Homem(nome, genero);
 		
-		else if (genero.equals("mulher"))
+		else if (genero.equals("feminino"))
 			return new Mulher(nome, genero);
 		
 		else if (genero.equals("naobinario"))
