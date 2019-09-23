@@ -18,6 +18,7 @@ public class App {
 		System.out.println(controller.killEnemyPontuation(e1));
 		System.out.println(controller.killEnemyPontuation(e2));
 		System.out.println(controller.killEnemyPontuation(e3));
+		System.out.println("teste");
 	}
 
 }
