@@ -12,4 +12,10 @@ public class AdaptadorSoma extends SomadorExistente implements SomadorEsperado{
 		
 		return somaLista(integerArr);
 	}
+
+	public int somaLista(ArrayList<Integer> lista) {
+		// TODO Auto-generated method stub
+		return somaLista(lista);
+	}
+	
 }

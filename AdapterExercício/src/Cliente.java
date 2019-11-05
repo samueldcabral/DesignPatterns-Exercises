@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cliente {
 	private SomadorEsperado somador;
 
@@ -8,6 +11,19 @@ public class Cliente {
 	public void executar() {
 		int[] vetor = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		int soma = somador.somaVetor(vetor);
+	
 		System.out.println("Resultado: " + soma);
+	}
+	
+	public void executarLista() {
+		List<Integer> lista = new ArrayList<Integer>();
+		lista.add(1);
+		lista.add(2);
+		lista.add(3);
+		lista.add(4);
+		
+		int soma = somador.somaLista(lista);
+		
+		System.out.println("Resultado: "+ soma);
 	}
 }

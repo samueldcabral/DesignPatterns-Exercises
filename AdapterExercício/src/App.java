@@ -6,6 +6,10 @@ public class App {
 		SomadorEsperado s = new AdaptadorSoma();
 		Cliente c = new Cliente(s);
 		c.executar();
+		
+		SomadorEsperado sLista = new AdaptadorSoma();
+		Cliente c2 = new Cliente(sLista);
+		c.executarLista();
 	}
 
 }
